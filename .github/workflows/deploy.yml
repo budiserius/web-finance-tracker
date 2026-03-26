@@ -27,4 +27,4 @@ jobs:
             npm prisma generate
             npx prisma migrate deploy
             npm run build
-            pm2 restart web-finance-tracker || pm2 start npm --name "web-finance-tracker" -- start
+            pm2 restart web-finance-tracker || pm2 start npm --name "web-finance-tracker" -- start -- -p 3002
